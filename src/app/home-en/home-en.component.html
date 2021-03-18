@@ -1,153 +1,276 @@
 <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light p-4" >
-        <div class="container-fluid">
-          <div class="col-3">
-            <img src="../../assets/logo.svg" loading="lazy" class="img-fluid" alt="">
-          </div>
-          <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  (click)= "scrollTo(target1)">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  (click)= "scrollTo(target2)">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  (click)= "scrollTo(target3)">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  (click)= "scrollTo(target4)">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/ar']" routerLinkActive="router-link-active"  >Arabic</a>
-              </li>
-            </ul>
-          </div>
-          <form class="d-flex">
-            <button class="btn nav-btn ml-3">
-              <i class="fas fa-phone-alt p-1"></i>
-              <span> <a href="tel:01009005902"> call us 01009005902 </a> </span>
-            </button>
-          </form>
-        </div>
-        </nav> 
+  <nav class="navbar navbar-expand-lg navbar-light p-4">
+    <div class="container-fluid">
+      <div class="col-3">
+        <img
+          src="../../assets/logo.svg"
+          loading="lazy"
+          class="img-fluid"
+          alt=""
+        />
       </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 mb-3 left-head">
-        <h3>HEY, IT’S FOUKA BAY</h3>
-        <p>YOUR ISLAND AWAITS... At Fouka Bay – Ras El Hekma you can take the time to reflect.</p>
-        <button class="btn mb-3" (click)= "scrollTo(target4)">Get Started</button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(target1)">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(target2)">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(target3)">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(target4)">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="['/ar']"
+              routerLinkActive="router-link-active"
+              >Arabic</a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="col-md-7 offset-md-1">
-        <img src="../../assets/bg.png" class="img-fluid" alt="">
+      <form class="d-flex">
+        <button class="btn nav-btn ml-3">
+          <i class="fas fa-phone-alt p-1"></i>
+          <span> <a href="tel:01226222000"> call us 01226222000 </a> </span>
+        </button>
+      </form>
+    </div>
+  </nav>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 mb-3 left-head">
+      <h3>HEY, IT’S FOUKA BAY</h3>
+      <p>
+        YOUR ISLAND AWAITS... At Fouka Bay – Ras El Hekma you can take the time
+        to reflect.
+      </p>
+      <button class="btn mb-3" (click)="scrollTo(target4)">Get Started</button>
+    </div>
+    <div class="col-md-7 offset-md-1">
+      <img src="../../assets/bg.png" class="img-fluid" alt="" />
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row about" #target1>
+    <div class="col-10 text-center m-auto">
+      <h3>IT’S TIME TO COME HOME.</h3>
+    </div>
+    <div class="col-md-6 mt-3">
+      <img src="../../assets/5-foukabay.png" class="img-fluid" alt="" />
+    </div>
+    <div class="col-md-6 mt-3">
+      <img src="../../assets/10-foukabay.png" class="img-fluid" alt="" />
+    </div>
+    <div class="col-12 mt-5">
+      <p>
+        At Fouka Bay – Ras El Hekma you can take the time to reflect. Take off
+        your watch,and enjoy ultimate luxury – spending time with those you care
+        for most. To be where you feel at peace, at home. Such opportunities are
+        rare indeed. Now is the time to make your dream waterfront home, your
+        reality.
+      </p>
+    </div>
+  </div>
+
+  <div class="row gallery" #target2>
+    <div class="col-12">
+      <h3>our Gallery</h3>
+    </div>
+    <div class="col-md-4">
+      <img src="../../assets/11-foukabay-1.png" class="img-fluid mt-3" alt="" />
+    </div>
+    <div class="col-md-8">
+      <img src="../../assets/12-foukabay.png" class="img-fluid mt-3" alt="" />
+    </div>
+
+    <div class="col-md-4 gallery-img">
+      <img src="../../assets/13-foukabay.png" class="img-fluid mt-3" alt="" />
+    </div>
+    <div class="col-md-4 gallery-img">
+      <img src="../../assets/3-foukabay.png" class="img-fluid mt-3" alt="" />
+    </div>
+    <div class="col-md-4 gallery-img">
+      <img src="../../assets/8-foukabay.png" class="img-fluid mt-3" alt="" />
+    </div>
+    <div class="col-md-8">
+      <img src="../../assets/4-foukabay.png" class="img-fluid mt-3" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <iframe
+        width="100%"
+        height="500"
+        src="https://www.youtube.com/embed/0W6GN6DJrhA"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+<div class="container mt-5" #target3>
+  <div class="row text-center specs">
+    <div class="col-md-4">
+      <h3>area</h3>
+      <p>Different spaces suit everyone</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Prices</h3>
+      <p>Enjoy With the opening prices</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Payment systems</h3>
+      <p>Different spaces suit everyone</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row map">
+    <div class="col-12">
+      <h3>JUST A SHORT DRIVE TO PARADISE</h3>
+    </div>
+    <div class="col-12">
+      <img src="../../assets/Asset 15@4x.png" class="img-fluid" alt="" />
+    </div>
+    <div class="col-12 mt-5">
+      <p>
+        Blissfully basking by Ras El Hekma’s gleaming coastline to boast an
+        exclusive spot on the North Coast’s azure shoreline, Fouka Bay rolls out
+        on 1 million square meters to offer an abundance of signature
+        experiences, you’d normally have to travel thousands of miles for.
+        Planned with your convenience in mind, the idyllic development is just a
+        pleasant 2 hour drive from Cairo, and only a minute away from Fouka
+        Highway. It is also ideally located 211 km from Alexandria, and 75 km
+        from Marsa Matrouh, setting itself as the greatest year-round escape in
+        the North Coast.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid footer mt-5">
+  <div class="row p-5">
+    <div class="col-md-5 mt-5">
+      <h3>Contact us</h3>
+      <p class="mt-5">
+        After success of the Tatweer Misr Company in Fouka Bay Run new launch
+        phase with distinguished services All units have sea view with great
+        view You will live in the best residential community overlooking the sea
+        on the north coast, with different spaces that suit all needs Fouka Bay
+        North Coast with calm, complete privacy and a full view of the sea It
+        has various integrated leisure activities for the whole family Tatweer
+        Misr successful business in Egypt
+      </p>
+    </div>
+    <div class="col-md-6 pt-5" #target4>
+      <div class="form-con">
+        <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+          <input
+            type="text"
+            title="name"
+            placeholder="name"
+            formControlName="name"
+          />
+          <app-field-error
+            [displayError]="isFieldValid('name')"
+            errorMsg="Please Enter your name"
+          ></app-field-error>
+          <input
+            type="text"
+            title="phone number"
+            placeholder="phone number"
+            formControlName="phone"
+          />
+          <app-field-error
+            [displayError]="isFieldValid('phone')"
+            errorMsg="Please Enter a valid phone number"
+          ></app-field-error>
+          <input
+            type="email"
+            title="email address"
+            placeholder="email address"
+            formControlName="email"
+          />
+          <app-field-error
+            [displayError]="isFieldValid('email')"
+            errorMsg="Please Enter a valid email address"
+          ></app-field-error>
+          <textarea
+            title="your message"
+            placeholder="your message"
+            formControlName="notes"
+          ></textarea>
+          <app-field-error
+            [displayError]="isFieldValid('notes')"
+            errorMsg="Please Enter your message & must be more than 20 character"
+          ></app-field-error>
+          <button class="btn" [disabled]="submitted">CONTACT US</button>
+        </form>
       </div>
     </div>
   </div>
-  <div class="container mt-5">
 
-    <div class="row about" #target1>
-      <div class="col-10 text-center m-auto">
-        <h3>
-          IT’S TIME TO COME HOME.
-        </h3>
-      </div>
-      <div class="col-md-6 mt-3">
-        <img src="../../assets/5-foukabay.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-md-6 mt-3">
-        <img src="../../assets/10-foukabay.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-12 mt-5">
-        <p>
-          At Fouka Bay – Ras El Hekma you can take the time to reflect. Take off your watch,and enjoy ultimate luxury – spending time with those you care for most. To be where you feel at peace, at home. Such opportunities are rare indeed. Now is the time to make your dream waterfront home, your reality.
-        </p>
-      </div>
+  <div class="row pt-5 logo-footer">
+    <div class="col-md-4 m-auto text-center">
+      <img
+        src="../../assets/FoukaBay Logo.svg"
+        loading="lazy"
+        class="img-fluid"
+        alt=""
+      />
     </div>
-
-    <div class="row gallery">
-      <div class="col-12">
-        <h3>our Gallery</h3>
-      </div>
-      <div class="col-md-4">
-        <img src="../../assets/11-foukabay-1.png" class="img-fluid mt-3" alt="">
-      </div>
-      <div class="col-md-8">
-        <img src="../../assets/12-foukabay.png" class="img-fluid mt-3" alt="">
-      </div>
-
-      <div class="col-md-4 gallery-img" >
-        <img src="../../assets/13-foukabay.png" class="img-fluid mt-3" alt="">
-      </div>
-      <div class="col-md-4 gallery-img" >
-        <img src="../../assets/3-foukabay.png" class="img-fluid mt-3" alt="">
-      </div>
-      <div class="col-md-4 gallery-img" >
-        <img src="../../assets/8-foukabay.png" class="img-fluid mt-3" alt="">
-      </div>
-      <div class="col-md-8">
-        <img src="../../assets/4-foukabay.png" class="img-fluid mt-3" alt="">
-      </div>
+    <div class="col-md-6 m-auto d-flex">
+      <ul class="list-inline m-auto text-center">
+        <li
+          class="list-inline-item p-3 text-center"
+          (click)="scrollTo(target1)"
+        >
+          <p>HOME</p>
+        </li>
+        <li
+          class="list-inline-item p-3 text-center"
+          (click)="scrollTo(target2)"
+        >
+          <p>ABOUT US</p>
+        </li>
+        <li
+          class="list-inline-item p-3 text-center"
+          (click)="scrollTo(target3)"
+        >
+          <p>SERVICES</p>
+        </li>
+        <li
+          class="list-inline-item p-3 text-center"
+          (click)="scrollTo(target4)"
+        >
+          <p>CONTACT US</p>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="container-fluid footer mt-5">
-    <div class="row p-5">
-      <div class="col-12 text-center">
-        <p>
-          GET IN TOUCH
-         </p>
-      </div>
-      <div class="col-md-10 m-auto pt-5" #target4>
-        <div class='form-con'>
-          <form [formGroup]='updateForm' (ngSubmit)='onSubmit()'>
-            <input type='text' title='name' placeholder='name' formControlName='name'/>
-            <app-field-error [displayError]="isFieldValid('name')" errorMsg='Please Enter your name'></app-field-error>
-            <input type='text' title='phone number' placeholder='phone number' formControlName='phone'/>
-            <app-field-error [displayError]="isFieldValid('phone')" errorMsg='Please Enter a valid phone number'></app-field-error>
-            <input type='email' title='email address' placeholder='email address' formControlName='email'/>
-            <app-field-error [displayError]="isFieldValid('email')" errorMsg='Please Enter a valid email address'></app-field-error>
-            <textarea title='your message' placeholder='your message' formControlName='notes'></textarea>
-            <app-field-error [displayError]="isFieldValid('notes')" errorMsg='Please Enter your message & must be more than 20 character'></app-field-error>
-            <button class='btn' [disabled]='submitted'>CONTACT US</button>
-          </form>
-          </div>
-        </div>
-    </div>
-
-    <div class="row pt-5 logo-footer text-center">
-      <div class="col-md-4 m-auto ">
-        <img src="../../assets/logo-white.png" loading="lazy" class="img-fluid" alt="">
-      </div>
-      <div class="col-md-4 pl-5 " style="margin-top: 7%;">
-        <h5>SITE MAP</h5>
-        <ul class="p-0">
-          <li (click)= "scrollTo(target1)">HOME</li>
-          <li (click)= "scrollTo(target1)">ABOUT</li>
-          <li (click)= "scrollTo(target4)">CONTACT US</li>
-          </ul>
-      </div>
-      <div class="col-md-4 pl-5 " style="margin-top: 7%;">
-        <h5>OUR DEVELOPMENT</h5>
-        <ul class="p-0">
-          <li (click)= "scrollTo(target5)">IL MONTE GALALA</li>
-          <li (click)= "scrollTo(target6)">FOUKA BAY</li>
-          <li (click)= "scrollTo(target3)">BLOOMFIELDS</li>
-          </ul>
-      </div>
-
-    </div>
-    <div class="row footer-phone pb-5">
-      <div class="col-10 offset-1">
-
-        <i class="fas fa-phone-alt p-1"></i>
-        <span> <a href="tel:01009005902"> 01009005902 </a> </span>
-        
-      </div>
-    </div>
-  </div>
+</div>
