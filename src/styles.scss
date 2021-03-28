@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-
+.fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background-color: #426168;
+  width: auto;
+  p,
+  a {
+    font: normal normal normal 21px/46px Open Sans;
+    &:hover {
+      text-decoration: none;
+      color: #eff3f4;
+    }
+  }
+}
 .nav-link {
   font: normal normal normal 16px/22px Open Sans;
   letter-spacing: 0px;
